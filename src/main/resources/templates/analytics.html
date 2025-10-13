@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Journal Analytics Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ✅ Use official CDN for Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { background-color: #f8f9fa; }
+        .card-stat {
+            border-left: 6px solid;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+        .card-stat:hover { transform: scale(1.03); }
+        .stat-number { font-size: 1.8rem; font-weight: bold; }
+        .happy { border-color: #36a2eb; }
+        .sad { border-color: #ff6384; }
+        .neutral { border-color: #ffcd56; }
+        /* ✅ Chart size control */
+        #moodChart {
+            max-width: 280px;
+            max-height: 280px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container py-4">
+    <h2 class="text-center mb-4 fw-bold text-primary">Journal Analytics Dashboard</h2>
+
+    <!-- ✅ Summary Cards -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card card-stat happy text-center p-3">
+                <h5>😊 Happy Entries</h5>
+                <p class="stat-number text-primary" th:text="${happyCount}">0</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-stat sad text-center p-3">
+                <h5>😢 Sad Entries</h5>
+                <p class="stat-number text-danger" th:text="${sadCount}">0</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-stat neutral text-center p-3">
+                <h5>😐 Neutral Entries</h5>
+                <p class="stat-number text-warning" th:text="${neutralCount}">0</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ Chart Section -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-body text-center">
+            <h5 class="text-center text-secondary mb-3">Mood Distribution</h5>
+            <div class="d-flex justify-content-center">
+                <canvas id="moodChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ Table Section -->
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="text-secondary mb-3">
+                Journal Entries (Total: <span th:text="${totalEntries}">0</span>)
+            </h5>
+            <table class="table table-striped table-hover">
+                <thead class="table-light">
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Mood</th>
+                    <th>Content</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="entry : ${entries}">
+                    <td th:text="${entry.title}">Sample Title</td>
+                    <td th:text="${#temporals.format(entry.date, 'dd MMM yyyy')}">01 Jan 2025</td>
+                    <td th:text="${entry.mood}">Happy</td>
+                    <td th:text="${entry.content}">Sample content...</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- ✅ Hidden values for Thymeleaf → JS -->
+<span id="happyCount" th:text="${happyCount}" hidden>0</span>
+<span id="sadCount" th:text="${sadCount}" hidden>0</span>
+<span id="neutralCount" th:text="${neutralCount}" hidden>0</span>
+
+<!-- ✅ Chart Script -->
+<script th:inline="javascript">
+document.addEventListener("DOMContentLoaded", function () {
+    const happy = parseInt(document.getElementById('happyCount').textContent) || 0;
+    const sad = parseInt(document.getElementById('sadCount').textContent) || 0;
+    const neutral = parseInt(document.getElementById('neutralCount').textContent) || 0;
+
+    const ctx = document.getElementById('moodChart');
+    if (ctx) {
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['😊 Happy', '😢 Sad', '😐 Neutral'],
+                datasets: [{
+                    label: 'Mood Count',
+                    data: [happy, sad, neutral],
+                    backgroundColor: ['#36a2eb', '#ff6384', '#ffcd56'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    title: {
+                        display: true,
+                        text: 'Mood Distribution Overview',
+                        font: { size: 16 }
+                    }
+                }
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>
