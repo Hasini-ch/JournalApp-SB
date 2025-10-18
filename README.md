@@ -32,47 +32,27 @@ It allows users to create, view, and analyze their journal entries with a clean 
 
 ## 📁 Project Structure
 
-'''journal-analytics/
-│
-├── src/
-│   ├── main/
-│   │   ├── java/com/journal/journalapp/
-│   │   │   ├── controller/        # Handles web requests
-│   │   │   ├── model/             # Entity classes
-│   │   │   ├── repository/        # JPA Repositories
-│   │   │   └── service/           # Business logic
-│   │   └── resources/
-│   │       ├── templates/         # Thymeleaf HTML files
-│   │       ├── static/            # CSS, JS, images
-│   │       └── application.properties
-│   └── test/                      # Unit and integration tests
-│
-├── pom.xml                        # Maven dependencies
-└── README.md                      # Project documentation'''
-
+journal-analytics/ │ ├── src/ │   ├── main/ │   │   ├── java/com/journal/journalapp/ │   │   │   ├── controller/        # Handles web requests │   │   │   ├── model/             # Entity classes │   │   │   ├── repository/        # JPA Repositories │   │   │   └── service/           # Business logic │   │   └── resources/ │   │       ├── templates/         # Thymeleaf HTML files │   │       ├── static/            # CSS, JS, images │   │       └── application.properties │   └── test/                      # Unit and integration tests │ ├── pom.xml                        # Maven dependencies └── README.md                      # Project documentation
 
 ---
 
-⚙ **Setup Instructions**
+## ⚙ Setup Instructions
 
-1️⃣ *Clone the Repository*
+### 1️⃣ Clone the Repository
 
 git clone https://github.com/Hasini-ch/JournalApp-SB.git
 cd journal-analytics-dashboard
 
-2️⃣ Configure Database
+### 2️⃣ Configure Database
 
 In src/main/resources/application.properties, update your MySQL details:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/newjournaldb
-
 spring.datasource.username=your_username
-
 spring.datasource.password=your_password
-
 spring.jpa.hibernate.ddl-auto=update
 
-3️⃣ Build & Run the Project
+### 3️⃣ Build & Run the Project
 
 mvn spring-boot:run
 
@@ -83,7 +63,7 @@ http://localhost:8080/dashboard
 
 ---
 
-📊 **Analytics Dashboard Preview**
+### 📊 Analytics Dashboard Preview
 
 The Analytics Page displays:
 
@@ -97,7 +77,7 @@ A clean table listing all entries
 
 ---
 
-🌟 **Example Moods**
+### 🌟 Example Moods
 
 Mood	Emoji	Description
 
