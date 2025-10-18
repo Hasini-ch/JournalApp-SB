@@ -1,4 +1,4 @@
-🧠 Journal Analytics Dashboard
+🧠 ****Journal Analytics Dashboard****
 
 This project is a Spring Boot web application for maintaining personal journal entries and analyzing moods using interactive visualizations.
 It allows users to create, view, and analyze their journal entries with a clean and modern dashboard built using Thymeleaf and Chart.js.
@@ -6,7 +6,7 @@ It allows users to create, view, and analyze their journal entries with a clean 
 
 ---
 
-🚀 Project Features
+🚀 **Project Features**
 
 ✅ Add, edit, and delete journal entries easily
 📅 View entries sorted by date
@@ -19,7 +19,7 @@ It allows users to create, view, and analyze their journal entries with a clean 
 
 ---
 
-🛠 Technologies Used
+🛠 **Technologies Used**
 
 Category	Technologies
 
@@ -57,9 +57,9 @@ Build Tool	Maven
 
 ---
 
-⚙ Setup Instructions
+⚙ **Setup Instructions**
 
-1️⃣ Clone the Repository
+1️⃣ *Clone the Repository*
 
 git clone https://github.com/Hasini-ch/JournalApp-SB.git
 cd journal-analytics-dashboard
@@ -69,8 +69,11 @@ cd journal-analytics-dashboard
 In src/main/resources/application.properties, update your MySQL details:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/newjournaldb
+
 spring.datasource.username=your_username
+
 spring.datasource.password=your_password
+
 spring.jpa.hibernate.ddl-auto=update
 
 3️⃣ Build & Run the Project
@@ -84,7 +87,7 @@ http://localhost:8080/dashboard
 
 ---
 
-📊 Analytics Dashboard Preview
+📊 **Analytics Dashboard Preview**
 
 The Analytics Page displays:
 
@@ -98,28 +101,27 @@ A clean table listing all entries
 
 ---
 
-🌟 Example Moods
+🌟 **Example Moods**
 
 Mood	Emoji	Description
 
 😊 Happy	#36a2eb	Positive mood
+
 😢 Sad	#ff6384	Negative mood
+
 😐 Neutral	#ffcd56	Balanced mood
-
-
 
 ---
 
-👨‍💻 Author
+👨‍💻 **Author**
 
 Cheyyeti Hasini
 🔗 GitHub: https://github.com/Hasini-ch
 📧 Email: cheyyetihasini@gmail.com
 
-
 ---
 
-🧩 Future Enhancements
+🧩 **Future Enhancements**
 
 🚀 Add user authentication (Spring Security)
 📅 Add date filters for mood tracking
@@ -129,6 +131,6 @@ Cheyyeti Hasini
 
 ---
 
-🪪 License
+🪪 **License**
 
 This project is licensed under the MIT License — feel free to use and modify for learning or personal use.
