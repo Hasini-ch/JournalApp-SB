@@ -34,7 +34,7 @@ Build Tool	Maven
 
 ---
 
-📁 Project Structure
+📁 **Project Structure**
 
 journal-analytics/
 │
