@@ -32,7 +32,23 @@ It allows users to create, view, and analyze their journal entries with a clean 
 
 ### 📁 Project Structure
 
-journal-analytics/ │ ├── src/ │   ├── main/ │   │   ├── java/com/journal/journalapp/ │   │   │   ├── controller/        # Handles web requests │   │   │   ├── model/             # Entity classes │   │   │   ├── repository/        # JPA Repositories │   │   │   └── service/           # Business logic │   │   └── resources/ │   │       ├── templates/         # Thymeleaf HTML files │   │       ├── static/            # CSS, JS, images │   │       └── application.properties │   └── test/                      # Unit and integration tests │ ├── pom.xml                        # Maven dependencies └── README.md                      # Project documentation
+journal-analytics/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/com/journal/journalapp/
+│   │   │   ├── controller/        # Handles web requests
+│   │   │   ├── model/             # Entity classes
+│   │   │   ├── repository/        # JPA Repositories
+│   │   │   └── service/           # Business logic
+│   │   └── resources/
+│   │       ├── templates/         # Thymeleaf HTML files
+│   │       ├── static/            # CSS, JS, images
+│   │       └── application.properties
+│   └── test/                      # Unit and integration tests
+│
+├── pom.xml                        # Maven dependencies
+└── README.md                      # Project documentation
 
 ---
 
