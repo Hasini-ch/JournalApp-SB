@@ -61,7 +61,7 @@ journal-analytics/
 
 1️⃣ Clone the Repository
 
-git clone https://github.com/your-username/journal-analytics-dashboard.git
+git clone https://github.com/Hasini-ch/JournalApp-SB.git
 cd journal-analytics-dashboard
 
 2️⃣ Configure Database
