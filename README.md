@@ -5,7 +5,7 @@ It allows users to create, view, and analyze their journal entries with a clean 
 
 ---
 
-## 🚀 Project Features
+### 🚀 Project Features
 
 ✅ Add, edit, and delete journal entries easily  
 📅 View entries sorted by date  
@@ -17,7 +17,7 @@ It allows users to create, view, and analyze their journal entries with a clean 
 
 ---
 
-## 🛠 Technologies Used
+### 🛠 Technologies Used
 
 | Category | Technologies |
 |-----------|--------------|
@@ -30,20 +30,20 @@ It allows users to create, view, and analyze their journal entries with a clean 
 
 ---
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 journal-analytics/ │ ├── src/ │   ├── main/ │   │   ├── java/com/journal/journalapp/ │   │   │   ├── controller/        # Handles web requests │   │   │   ├── model/             # Entity classes │   │   │   ├── repository/        # JPA Repositories │   │   │   └── service/           # Business logic │   │   └── resources/ │   │       ├── templates/         # Thymeleaf HTML files │   │       ├── static/            # CSS, JS, images │   │       └── application.properties │   └── test/                      # Unit and integration tests │ ├── pom.xml                        # Maven dependencies └── README.md                      # Project documentation
 
 ---
 
-## ⚙ Setup Instructions
+### ⚙ Setup Instructions
 
-### 1️⃣ Clone the Repository
+#### 1️⃣ Clone the Repository
 
 git clone https://github.com/Hasini-ch/JournalApp-SB.git
 cd journal-analytics-dashboard
 
-### 2️⃣ Configure Database
+#### 2️⃣ Configure Database
 
 In src/main/resources/application.properties, update your MySQL details:
 
@@ -52,7 +52,7 @@ spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 
-### 3️⃣ Build & Run the Project
+#### 3️⃣ Build & Run the Project
 
 mvn spring-boot:run
 
@@ -89,7 +89,7 @@ Mood	Emoji	Description
 
 ---
 
-👨‍💻 **Author**
+### 👨‍💻 Author
 
 Cheyyeti Hasini
 🔗 GitHub: https://github.com/Hasini-ch
@@ -97,7 +97,7 @@ Cheyyeti Hasini
 
 ---
 
-🧩 **Future Enhancements**
+### 🧩 Future Enhancements
 
 🚀 Add user authentication (Spring Security)
 📅 Add date filters for mood tracking
@@ -107,6 +107,6 @@ Cheyyeti Hasini
 
 ---
 
-🪪 **License**
+### 🪪 License
 
 This project is licensed under the MIT License — feel free to use and modify for learning or personal use.
