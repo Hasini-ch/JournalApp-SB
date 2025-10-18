@@ -36,7 +36,7 @@ Build Tool	Maven
 
 📁 **Project Structure**
 
-journal-analytics/
+'''journal-analytics/
 │
 ├── src/
 │   ├── main/
@@ -52,7 +52,7 @@ journal-analytics/
 │   └── test/                      # Unit and integration tests
 │
 ├── pom.xml                        # Maven dependencies
-└── README.md                      # Project documentation
+└── README.md                      # Project documentation'''
 
 
 ---
