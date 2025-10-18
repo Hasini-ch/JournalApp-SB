@@ -1,40 +1,36 @@
-🧠 ****Journal Analytics Dashboard****
+# 🧠 Journal Analytics Dashboard
 
-This project is a Spring Boot web application for maintaining personal journal entries and analyzing moods using interactive visualizations.
-It allows users to create, view, and analyze their journal entries with a clean and modern dashboard built using Thymeleaf and Chart.js.
-
+This project is a *Spring Boot web application* for maintaining personal journal entries and analyzing moods using *interactive visualizations*.  
+It allows users to create, view, and analyze their journal entries with a clean and modern dashboard built using *Thymeleaf* and *Chart.js*.
 
 ---
 
-🚀 **Project Features**
+## 🚀 Project Features
 
-✅ Add, edit, and delete journal entries easily
-📅 View entries sorted by date
-📊 Visualize mood distribution (Happy, Sad, Neutral) with dynamic charts
-🎨 Clean and responsive Bootstrap-based UI
-🧮 Automatic mood-based analytics and count summary
-💾 Data stored securely in a MySQL database
+✅ Add, edit, and delete journal entries easily  
+📅 View entries sorted by date  
+📊 Visualize mood distribution (Happy, Sad, Neutral) with dynamic charts  
+🎨 Clean and responsive Bootstrap-based UI  
+🧮 Automatic mood-based analytics and count summary  
+💾 Data stored securely in a MySQL database  
 🧰 Built with Spring Boot, Thymeleaf, and JPA
 
+---
+
+## 🛠 Technologies Used
+
+| Category | Technologies |
+|-----------|--------------|
+| *Backend Framework* | Spring Boot (v3.x) |
+| *Frontend* | Thymeleaf, Bootstrap 5, Chart.js |
+| *Database* | MySQL |
+| *ORM* | Spring Data JPA / Hibernate |
+| *Language* | Java 17+ |
+| *Build Tool* | Maven |
 
 ---
 
-🛠 **Technologies Used**
-
-Category	Technologies
-
-Backend Framework	Spring Boot (v3.x)
-Frontend	Thymeleaf, Bootstrap 5, Chart.js
-Database	MySQL
-ORM	Spring Data JPA / Hibernate
-Language	Java 17+
-Build Tool	Maven
-
-
-
----
-
-📁 **Project Structure**
+## 📁 Project Structure
 
 '''journal-analytics/
 │
