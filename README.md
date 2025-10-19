@@ -1,5 +1,4 @@
-# 🧠 Journal Analytics Dashboard
-
+# 🧠 Personal Journal Analytics Web Application
 This project is a *Spring Boot web application* for maintaining personal journal entries and analyzing moods using *interactive visualizations*.  
 It allows users to create, view, and analyze their journal entries with a clean and modern dashboard built using *Thymeleaf* and *Chart.js*.
 
