@@ -1,127 +1,133 @@
 # 🧠 Personal Journal Analytics Web Application
-This project is a *Spring Boot web application* for maintaining personal journal entries and analyzing moods using *interactive visualizations*.  
-It allows users to create, view, and analyze their journal entries with a clean and modern dashboard built using *Thymeleaf* and *Chart.js*.
+
+This project is a Java Spring Boot web application for maintaining personal journal entries and analyzing moods through an interactive dashboard. It enables users to securely create, view, update, and delete journal entries while providing visual insights into mood trends for better self-reflection.
 
 ---
 
-### 🚀 Project Features
+## 🚀 Project Features
 
-✅ Add, edit, and delete journal entries easily  
-📅 View entries sorted by date  
-📊 Visualize mood distribution (Happy, Sad, Neutral) with dynamic charts  
-🎨 Clean and responsive Bootstrap-based UI  
-🧮 Automatic mood-based analytics and count summary  
-💾 Data stored securely in a MySQL database  
-🧰 Built with Spring Boot, Thymeleaf, and JPA
+- ✅ Add, edit, and delete journal entries
+- 📅 View journal entries sorted by date
+- 📊 Analyze mood trends with interactive visualizations
+- 🎨 Clean and responsive user interface
+- 🧮 Automatic mood-based analytics and summaries
+- 💾 Secure storage using MySQL database
 
 ---
 
-### 🛠 Technologies Used
+## 🛠 Tech Stack
 
 | Category | Technologies |
-|-----------|--------------|
-| *Backend Framework* | Spring Boot (v3.x) |
-| *Frontend* | Thymeleaf, Bootstrap 5, Chart.js |
-| *Database* | MySQL |
-| *ORM* | Spring Data JPA / Hibernate |
-| *Language* | Java 17+ |
-| *Build Tool* | Maven |
+|----------|--------------|
+| Backend | Java, Spring Boot |
+| Frontend | HTML, CSS, JavaScript |
+| Database | MySQL |
 
 ---
 
-### 📁 Project Structure
+## 📁 Project Structure
 
+```
 journal-analytics/
 │
 ├── src/
 │   ├── main/
-│   │   ├── java/com/journal/journalapp/
-│   │   │   ├── controller/        # Handles web requests
-│   │   │   ├── model/             # Entity classes
-│   │   │   ├── repository/        # JPA Repositories
-│   │   │   └── service/           # Business logic
+│   │   ├── java/
+│   │   │   ├── controller/
+│   │   │   ├── model/
+│   │   │   ├── repository/
+│   │   │   └── service/
 │   │   └── resources/
-│   │       ├── templates/         # Thymeleaf HTML files
-│   │       ├── static/            # CSS, JS, images
+│   │       ├── templates/
+│   │       ├── static/
 │   │       └── application.properties
-│   └── test/                      # Unit and integration tests
+│   └── test/
 │
-├── pom.xml                        # Maven dependencies
-└── README.md                      # Project documentation
+├── pom.xml
+└── README.md
+```
 
 ---
 
-### ⚙ Setup Instructions
+## ⚙️ Setup Instructions
 
-#### 1️⃣ Clone the Repository
+### 1. Clone the Repository
 
+```bash
 git clone https://github.com/Hasini-ch/JournalApp-SB.git
-cd journal-analytics-dashboard
+cd JournalApp-SB
+```
 
-#### 2️⃣ Configure Database
+### 2. Configure Database
 
-In src/main/resources/application.properties, update your MySQL details:
+Update your MySQL configuration in:
 
+```
+src/main/resources/application.properties
+```
+
+Example:
+
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/newjournaldb
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
+```
 
-#### 3️⃣ Build & Run the Project
+### 3. Run the Application
 
+```bash
 mvn spring-boot:run
+```
 
-Then open your browser and go to:
+Open your browser:
 
+```
 http://localhost:8080/dashboard
-
-
----
-
-### 📊 Analytics Dashboard Preview
-
-The Analytics Page displays:
-
-Total count of journal entries by mood
-
-Pie/doughnut chart visualization of mood distribution
-
-A clean table listing all entries
-
-
+```
 
 ---
 
-### 🌟 Example Moods
+## 📊 Dashboard
 
-Mood	Emoji	Description
+The application provides:
 
-😊 Happy	#36a2eb	Positive mood
-
-😢 Sad	#ff6384	Negative mood
-
-😐 Neutral	#ffcd56	Balanced mood
-
----
-
-### 👨‍💻 Author
-
-Cheyyeti Hasini
-🔗 GitHub: https://github.com/Hasini-ch
-📧 Email: cheyyetihasini@gmail.com
+- Mood-wise journal analytics
+- Interactive mood visualization
+- Daily journal management
+- Secure data storage
+- Simple and responsive interface
 
 ---
 
-### 🧩 Future Enhancements
+## 🌟 Sample Moods
 
-🚀 Add user authentication (Spring Security)
-📅 Add date filters for mood tracking
-📈 Include export to CSV/PDF reports
-🌈 Add more moods and insights
-
+- 😊 Happy
+- 😐 Neutral
+- 😢 Sad
 
 ---
 
-### 🪪 License
+## 👨‍💻 Author
 
-This project is licensed under the MIT License — feel free to use and modify for learning or personal use.
+**Cheyyeti Hasini**
+
+- GitHub: https://github.com/Hasini-ch
+- Email: cheyyetihasini@gmail.com
+
+---
+
+## 🚀 Future Enhancements
+
+- User Authentication
+- Advanced Mood Analytics
+- Search and Filter Entries
+- Export Reports (PDF/CSV)
+- Additional Mood Categories
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
